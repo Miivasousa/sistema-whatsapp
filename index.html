@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperChat</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="container" id="loginForm">
+        <h2>Login</h2>
+        <form id="login">
+            <label for="username">Usuário:</label>
+            <input type="text" name="username" id="username" required><br><br>
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" required><br><br>
+            <button type="submit">Acessar</button>
+        </form>
+    </div>
+
+    <div class="box" id="boxForm">
+        <h2>Agendar mensagem</h2>
+        <form id="Agendar">
+            <label for="name">Nome</label><br>
+            <input type="text" name="name" id="name" required><br>
+            <label for="phone">Telefone</label><br>
+            <input type="tel" name="phone" id="phone" required aria-describedby="phone-format"><small id="phone-format">formato: (xx) xxxxx-xxxx</small><br>
+            <label for="datetime">Data e Hora</label><br>
+            <input type="datetime-local" name="datetime" id="datetime" required><br>
+            <label for="message">Digite uma Mensagem</label><br>
+            <textarea name="message" id="message" required></textarea><br>
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+
+    <script src="./src/javascript.js"></script>
+</body>
+</html>
