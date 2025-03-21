@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperChat</title>
+    <title>Chat-Bot</title>
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container" id="loginForm">
@@ -19,16 +22,16 @@
     </div>
 
     <div class="box" id="boxForm">
-        <h2>Agendar mensagem</h2>
+        <h2>Agende sua mensagem</h2>
         <form id="Agendar">
-            <label for="name">Nome</label><br>
-            <input type="text" name="name" id="name" required><br>
-            <label for="phone">Telefone</label><br>
-            <input type="tel" name="phone" id="phone" required aria-describedby="phone-format"><small id="phone-format">formato: (xx) xxxxx-xxxx</small><br>
-            <label for="datetime">Data e Hora</label><br>
-            <input type="datetime-local" name="datetime" id="datetime" required><br>
-            <label for="message">Digite uma Mensagem</label><br>
-            <textarea name="message" id="message" required></textarea><br>
+            <label for="name">Nome:</label><br>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="phone">Telefone:</label><br>
+            <input type="tel" name="phone" id="phone" required aria-describedby="phone-format"><br><br>
+            <label for="datetime">Data e Hora:</label><br><br>
+            <input type="datetime-local" name="datetime" id="datetime" required><br><br>
+            <label for="message"><span style="font-weight: bold;">Deixe sua mensagem</span></label><br><br>
+            <textarea name="message" id="message" required></textarea><br><br>
             <button type="submit">Agendar</button>
         </form>
     </div>
