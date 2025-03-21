@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Recupera agendamentos existentes ou cria array vazio
         const agendamentosSalvos = JSON.parse(localStorage.getItem('agendamentos')) || [];
 
-// Adiciona novo agendamento
+// Adiciona um novo agendamento
         agendamentosSalvos.push(agendamento);
 
 // Salva no localStorage

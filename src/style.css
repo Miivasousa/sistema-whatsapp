@@ -103,10 +103,16 @@ button:hover {
   box-shadow: var(--Escuro);
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
   .container, .box {
-    padding: 1.5px;
+    padding: 15px; /* Ajustei para 15px para melhor legibilidade */
     margin: 10px;
+  }
+
+  input, textarea {
+    width: 100%; 
+    font-size: 18px; 
+    
   }
 }
 
